@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Care - About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: rgb(9, 102, 102);
+            padding: 2em;
+            text-align: center;
+            color: white;
+            animation: fadeInUp 1s ease-out, headerHover 0.5s ease-out;
+        }
+
+        header:hover {
+            transform: scale(1.05);
+        }
+
+        section {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 2em;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            animation: scaleIn 1.5s ease-out;
+        }
+
+        h1, h2 {
+            color: #4CAF50;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .about-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1em;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        .team {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 2em;
+        }
+
+        .team-member {
+            text-align: center;
+            width: 30%;
+            margin-bottom: 1em;
+        }
+
+        .team-member img {
+            max-width: 100%;
+            border-radius: 50%;
+        }
+
+        .testimonial {
+            border-left: 2px solid #4CAF50;
+            padding-left: 1em;
+            margin-top: 1.5em;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            animation: fadeIn 1.5s ease-out;
+            font-size: 0.8em;
+        }
+
+        /* Animation keyframes */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes scaleIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes headerHover {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.05);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Life Care</h1>
+        <p>Your Partner in Well-being</p>
+    </header>
+
+    <section>
+        <img src="data:image/jpeg;base64,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" alt="Life Care Image" class="about-img">
+
+        <h2>About Us</h2>
+        <p>Welcome to Life Care, where we are dedicated to enhancing the quality of your life through personalized care and support. Our mission is to provide comprehensive services that promote physical, emotional, and mental well-being.</p>
+
+        <p>At Life Care, we understand the importance of a holistic approach to health. Our team of experienced professionals is committed to delivering personalized care solutions tailored to meet your unique needs. Whether you are seeking assistance for yourself or a loved one, we are here to support you on your journey to a healthier and happier life.</p>
+
+        <p>We believe in building lasting relationships with our clients, based on trust, compassion, and respect. Our services encompass a wide range of life care options, including health assessments, wellness programs, and ongoing support to ensure that you receive the attention and care you deserve.</p>
+
+        <p>Join us at Life Care, and let's embark on a journey towards a healthier, more fulfilling life together. Your well-being is our priority.</p>
+
+        <div class="team">
+            <div class="team-member">
+                <img src="https://media.licdn.com/dms/image/C5603AQG2HVVy63qXJA/profile-displayphoto-shrink_800_800/0/1628752535395?e=2147483647&v=beta&t=2idIVWHJSHlgnIoFZdXobjiyIEkqace3JqCkQKIqARE" alt="Team Member 1">
+                <h3>Dr. Sarah Johnson</h3>
+                <p>Founder &amp; Medical Director</p>
+            </div>
+            <div class="team-member">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk22K2kem3L28_vMvjQvJBmKtq2stAFf9VPw&usqp=CAU" alt="Team Member 2">
+                <h3>Emily Davis</h3>
+                <p>Wellness Coach</p>
+            </div>
+            <div class="team-member">
+                <img src="https://www.unicomcorp.com/wp-content/uploads/2018/12/Technical-support-specialists-skills1.jpg" alt="Team Member 3">
+                <h3>John Smith</h3>
+                <p>Support Specialist</p>
+            </div>
+            <div class="team-member">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAC6Nj2vpeHoVseKBhq-tKHYkLBDqi864GnA&usqp=CAU" alt="Team Member 4">
+                <h3>Dr. Michael Rodriguez</h3>
+                <p>Health Advisor</p>
+            </div>
+            <div class="team-member">
+                <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2021/02/2/GettyImages-1214221095.jpg.rend.hgtvcom.616.411.suffix/1612301517364.jpeg" alt="Team Member 5">
+                <h3>Olivia Martinez</h3>
+                <p>Nutritionist</p>
+            </div>
+        </div>
+
+        <div class="testimonial">
+            <h3>What Our Clients Say</h3>
+            <p>"Life Care has been a game-changer for me. The personalized care and support I received have made a significant impact on my well-being. I highly recommend their services."</p>
+            <p>- Jane Doe</p>
+            <p>"The team at Life Care is fantastic! Their dedication to my health journey has been unparalleled. I'm grateful for their expertise and genuine care."</p>
+            <p>- John Smith</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Life Care. All rights reserved.</p>
+    </footer>
+</body>
+</html>
